@@ -26,3 +26,5 @@ fitness = check_fitness(student, profession)
 print(
     f'Пригодность {fitness["fit_percent"]}%\n{student["full_name"]} знает {" ".join(fitness["has"])}'
     f'\n{student["full_name"]} не знает {" ".join(fitness["lacks"])}')
+if fitness["fit_percent"] < 30:
+    print(f'Предлагаем {student["full_name"]} пройти курс {profession["title"].title()}')
